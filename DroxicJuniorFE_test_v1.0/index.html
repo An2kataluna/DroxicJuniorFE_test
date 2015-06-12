@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Droxic Task</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('googleMap');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <header id="header" class="">
+        <div class="menu">
+            <ul>
+                <li class="items">Home</li>
+                <li class="items">About</li>
+                <li class="items">Team</li>
+                <li class="items">Portfolio</li>
+                <li class="items">Other</li>
+                <li class="items">Contact</li>
+            </ul>
+        </div><!-- /menu -->
+        <div class="logo">
+            <a class="logo-title">Motion</a><!-- logo-title -->
+            <span class="logo-descr">Asingle Page Template</span><!-- logo-descr -->
+        </div><!-- /logo -->
+        <div class="slider">
+            <h1 class="slider-title">Welcome to Motion</h1><!-- slider-title -->
+            <span class="slider-descr">Asmart & Creative Single Page Template</span><!-- slider-descr -->
+
+        </div><!-- slider -->
+    </header><!-- /header -->
+
+    <section class="merits">
+        <header>
+            <h2 class="merits-title">Smart & Creative</h2><!-- merits-title -->
+            <span class="merits-descr">This is why you will use it :)</span><!-- merits-descr -->
+        </header><!-- /header -->
+        <div>
+            <article class="merits-artic">
+                <h3 class="artic-title">Multi purpose</h3>
+                <p class="artic-descr">Lorem ipsum dolor sit amet,consectetur adipisicing..</p>
+            </article><!-- merits-artic -->
+            <article class="merits-artic">
+                <h3 class="artic-title">Flat UI</h3>
+                <p class="artic-descr">Lorem ipsum dolor sit amet,consectetur adipisicing..</p>
+            </article><!-- merits-artic -->
+            <article class="merits-artic">
+                <h3 class="artic-title">Creative Design</h3>
+                <p class="artic-descr">Lorem ipsum dolor sit amet,consectetur adipisicing..</p>
+            </article><!-- merits-artic -->
+        </div>
+    </section><!-- /merits -->
+
+    <section class="team">
+        <header>
+            <h2 class="team-title">Talented & Experts</h2>
+            <span class="team-descr">This is our team :)</span>
+        </header>
+        <article class="team-artic">
+            <img src="" alt="" class="profile">
+            <h4 class="profile-name">Mahmoud Baghagho</h4>
+            <span class="profile-descr">Senior UI Designer</span>
+            <a href="" class="tweet">Follow</a>
+        </article><!-- team-artic -->
+        <article class="team-artic">
+            <img src="" alt="" class="profile">
+            <h4 class="profile-name">Abd ElRahman</h4>
+            <span class="profile-descr">Senior App Developer</span>
+            <a href="" class="tweet">Follow</a>
+        </article><!-- team-artic -->
+        <article class="team-artic">
+            <img src="" alt="" class="profile">
+            <h4 class="profile-name">Mostafa Amin</h4>
+            <span class="profile-descr">Senior Graphic Designer</span>
+            <a href="" class="tweet">Follow</a>
+        </article><!-- team-artic -->
+        <article class="team-artic">
+            <img src="" alt="" class="profile">
+            <h4 class="profile-name">Ahmed Ali</h4>
+            <span class="profile-descr">Senior Web Developer</span>
+            <a href="" class="tweet">Follow</a>
+        </article><!-- team-artic -->
+    </section><!-- /team -->
+
+    <section>
+        <div class="portfolio">
+            <header>
+                <h2 class="portfolio-title">Elegant & Genuine</h2>
+                <span class="portfolio-descr">This is how our works looks like :)</span>
+            </header><!-- /header -->
+
+        </div><!-- /portfolio -->
+
+        <div class="pricing">
+            <article class="pricing-artic">
+                <header>
+                    <h2 class="pricing-title">Start Up</h2>
+                    <span class="pricing-descr">For beginners</span>
+                </header>
+                <ul>
+                    <li class="pricing-options">Basic pages</li>
+                    <li class="pricing-options">MySQL Databases</li>
+                    <li class="pricing-options">Bandwith</li>
+                    <li class="pricing-options">Storage space</li>
+                </ul>
+                <footer>
+                    <a href="#" class="order">Order</a>
+                    <!-- before: $ -->
+                    <span class="price">15</span>
+                    <!-- after: /mo -->
+                </footer>
+            </article>
+            <article class="pricing-artic">
+                <header>
+                    <h2 class="pricing-title">Standard</h2>
+                    <span class="pricing-descr">More than what you have dreamed with</span>
+                </header>
+                <ul>
+                    <li class="pricing-options">Standard pages</li>
+                    <li class="pricing-options">MySQL Databases</li>
+                    <li class="pricing-options">Bandwith</li>
+                    <li class="pricing-options">Storage space</li>
+                </ul>
+                <footer>
+                    <a href="#" class="order">Order</a>
+                    <!-- before: $ -->
+                    <span class="price">25</span>
+                    <!-- after: /mo -->
+                </footer>
+            </article>
+            <article class="pricing-artic">
+                <header>
+                    <h2 class="pricing-title">Professional</h2>
+                    <span class="pricing-descr">For smart people</span>
+                </header>
+                <ul>
+                    <li class="pricing-options">Basic pages</li>
+                    <li class="pricing-options">MySQL Databases</li>
+                    <li class="pricing-options">Bandwith</li>
+                    <li class="pricing-options">Storage space</li>
+                </ul>
+                <footer>
+                    <a href="#" class="order">Order</a>
+                    <!-- before: $ -->
+                    <span class="price">35</span>
+                    <!-- after: /mo -->
+                </footer>
+            </article>
+        </div><!-- /pricing -->
+        <span class="bottom-descr">And more available plans for all needs ....
+            <a href="#" class="check">Check here</a>
+        </span><!-- bottom-descr -->
+    </section>
+
+    <section class="tweets">
+        <header>
+            <h2 class="tweets-title">Latest Tweets</h2>
+            <span class="tweets-descr">This is how to keep in touch :)</span>
+        </header>
+        <div class="">
+
+        </div>
+    </section><!-- /tweets -->
+
+    <footer id="footer" class="">
+        <div class="info">
+            <h4 class="contact">Contact Us</h4>
+            <span class="mail">7oroof@7oroof.com</span>
+            <a href="#" class="mail-info">Your address goes here</a>
+        </div>
+        <div class="copy">
+            <div class="links">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div><!-- links -->
+            <span class="copy-info">© 2013
+                <span>Motion Template</span>. Design by Begha
+            </span><!-- copy-info -->
+        </div>
+        <div id="googleMap" class="maps" style="width:960px;height:251px;"></div>
+    </footer><!-- /footer -->
+
+</body>
+</html>
