@@ -50,5 +50,12 @@ $controls.on('click dblclick', function() {
 });
 
 }(jQuery));
-/**/
+/* /Jquery Carousel */
 
+/*
+* Vanilla Javascript Slider
+*/
+
+var pushHorizontalSlider = new slider('#pushHorizontalSlider', {transition: {effect: 'pushInHorizontal'}});
+
+/* /Vanilla Javascript Slider */
