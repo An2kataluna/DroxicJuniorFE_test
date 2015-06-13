@@ -18,7 +18,7 @@ function slider(slideIdentifier, custom_options){
       easing: 'easeInOut'
     },
     pause: 2000,
-    autoRun: true,
+    autoRun: false,
     random: false,
     direction: true,
     navigation: true

@@ -35,6 +35,24 @@ $(document).ready(function() {
 * Vanilla Javascript Slider
 */
 
-var pushHorizontalSlider = new slider('#pushHorizontalSlider', {transition: {effect: 'pushInHorizontal'}});
+var pushHorizontalSlider = new slider('#pushHorizontalSlider',{
+    transition: {effect: 'pushInHorizontal'},
+    classes: {slider: 'ph-slider',slide: 'ph-slide'}
+});
+
+var verticalSlider = new slider('#verticalSlider',{
+    classes: {
+      navigation: 'tweet-navigation',
+      navigationItem: 'tweet-navigation-item',
+      direction: 'tweet-directions',
+      directionPrev: 'tweet-directions-prev',
+      directionNext: 'tweet-directions-next',
+      slider: 'tweet-slider',
+      slide: 'tweet-slide',
+    },
+    transition: {effect: 'pushInBottom'},
+    autoRun: false,
+    navigation: false
+});
 
 /* /Vanilla Javascript Slider */

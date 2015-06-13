@@ -147,10 +147,10 @@
     color: white;
     text-shadow: 0px 1px 1px #C34B2A;
 }
-.slider{
+.carousel{
     position: relative;
 }
-.slider-title{
+.carousel-title{
     font-family: 'bariol_regularregular';
     font-size: 50px;
     color: white;
@@ -159,7 +159,7 @@
     letter-spacing: 12px;
     margin-bottom: 0px;
 }
-.slider-descr{
+.carousel-descr{
     font-family: 'bariol_regularregular';
     font-size: 20px;
     color: white;
@@ -444,7 +444,7 @@
     text-align: center;
     display: block;
 }
-.tweet{
+.tweet-follow{
     width: 85px;
     height: 24px;
     margin: 20px 8px;
@@ -455,7 +455,7 @@
     background-color: #6cc372;
     display: inline-block;
 }
-.tweet:before{
+.tweet-follow:before{
     content: '';
     width: 50px;
     height: 45px;
@@ -507,8 +507,125 @@
 
 /* Slider*/
 .sliderWrapper{
+    width: 960px;
+    padding: 40px 90px 10px;
+    height: 265px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.ph-slider{
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.ph-slide{
+    display: none;
+    margin: 0 auto;
+    padding: 10px 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.slider-directions{
 
 }
+.slider-directions-prev{
+    cursor: pointer;
+    display: inline-block;
+    margin: 72px;
+    border-left: 5px solid #6cc372;
+    border-top: 5px solid #6cc372;
+    width: 16px;
+    height: 16px;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -6%;
+    top: 15%;
+    z-index: 10;
+}
+.slider-directions-next{
+    cursor: pointer;
+    display: inline-block;
+    margin: 72px;
+    border-right: 5px solid #6cc372;
+    border-bottom: 5px solid #6cc372;
+    width: 16px;
+    height: 16px;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -6%;
+    top: 15%;
+    z-index: 10;
+}
+.slider-navigation{
+    position: absolute;
+    color: #333;
+    left: 48%;
+    bottom: 0px;
+    z-index: 10;
+}
+.slider-navigation-item{
+    cursor: pointer;
+    background: #656565;
+    border-radius: 100%;
+    box-shadow: 0;
+    display: inline-block;
+    float: left;
+    height: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-indent: -9999px;
+    width: 12px;
+
+    transition-property: box-shadow;
+    /*transition-duration: 0.5s;*/
+    transition-timing-function: ease;
+}
+.slider-navigation-item.active{
+    background: #6cc372;
+    color: #656565;
+}
+.ph-slide-artic{
+    width: 215px;
+    height: 270px;
+    float: left;
+    overflow: hidden;
+    margin: 12px;
+}
+.ph-slide-artic:last-child{
+    margin-right: 5px;
+}
+.ph-slide-artic:first-child{
+    margin-left: 5px;
+}
+.ph-slide-pic{
+    width:200px;
+    height: 150px;
+    border-radius: 5px;
+}
+.ph-slide-descr{
+    font-family: 'bariol_regularregular';
+    font-size: 20px;
+    color: #232324;
+    text-align: center;
+    display: block;
+}
+.pic1{
+    background: url("../images/safaryback1.jpg") -250px -152px no-repeat;
+    border-radius: 5px;
+}
+.pic2{
+    background: url("../images/safaryback2.jpg") -89px -130px no-repeat;
+}
+.pic3{
+    background: url("../images/iPhone.png") -283px -60px;
+}
+.pic4{
+    background: url("../images/safaryfront.jpg") -62px -28px;
+}
+
 /**/
 
 .pricing{
@@ -656,6 +773,10 @@
 .check{
     color: #eb4f4e;
 }
+.check:hover{
+    color: #eb4f4e;
+    text-decoration: underline;
+}
 /* /Section>Portfolio + Pricing */
 
 
@@ -683,7 +804,102 @@
     text-align: center;
     display: inherit;
 }
-
+/*Tweet Slider*/
+.tweet-wrapper{
+    width: 960px;
+    padding: 0px 90px 10px;
+    height: 150px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    position: relative;
+}
+.tweet-slider{
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.tweet-slide{
+    display: none;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.tweet-directions-prev{
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border: 20px solid #232324;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tweet-directions-prev:after{
+    content: '';
+    cursor: pointer;
+    border-top: 5px solid #f9f9f9;
+    border-left: 5px solid #f9f9f9;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    z-index: 10;
+}
+.tweet-directions-next{
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border: 20px solid #232324;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.tweet-directions-next:after{
+    content: '';
+    cursor: pointer;
+    border-bottom: 5px solid #f9f9f9;
+    border-right: 5px solid #f9f9f9;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    z-index: 10;
+}
+.tweet-icon{
+    width: 50px;
+    height: 45px;
+    background: url('../images/sprites.png') -152px -330px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+}
+.tweet{
+    margin-top: 80px;
+    padding: 10px;
+    font-family: 'bariol_regularregular';
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    display: inline-block;
+}
+.tweet-info{
+    font-family: 'bariol_regularregular';
+    font-size: 20px;
+    color: #232324;
+    text-align: center;
+    display: inherit;
+}
+a.tweet-info:hover{
+    text-decoration: underline;
+}
+/**/
 /* /Section Tweets */
 
 
