@@ -1,4 +1,7 @@
-/*------------ Fonts------------*/
+/*===================================
+  FONTS
+===================================*/
+
 @font-face {
     font-family: 'bariol_regularregular';
     src: url('../fonts/Bariol_Regular/bariol_regular-webfont.eot');
@@ -35,22 +38,25 @@
     font-style: normal;
 
 }
-/* /Fonts */
 
+/*===================================
+  CUSTOM GRID
+===================================*/
 .container{
     width: 960px;
     margin: 0 auto;
     /*position: relative;*/
 }
 
-
-/*------------ Header ------------*/
+/*===================================
+  HEADER
+===================================*/
 #header{
-    width: 1700px;
+    width: 100%;
     height: 745px;
     background-color: #eb4f4e;
     margin: 0 auto;
-    position: relative;
+    /*position: relative;*/
 }
 #header:after{
     content: '';
@@ -91,10 +97,14 @@
     top: 64px;
     right: 0;
 }
+
+/*
+* MENU
+*/
 .menu {
-    width: 530px;
-    height: 90px;
-    padding-top: 20px;
+    width: 550px;
+    height: 70px;
+    padding-top: 40px;
     float: right;
     overflow: hidden;
 }
@@ -117,6 +127,10 @@
     border-radius: 3px;
     cursor: pointer;
 }
+
+/*
+* LOGO
+*/
 .logo{
     width: 170px;
     height: 90px;
@@ -146,6 +160,19 @@
     font-size: 17px;
     color: white;
     text-shadow: 0px 1px 1px #C34B2A;
+}
+
+/*
+* HEADER SLIDER
+*/
+.iphone{
+    width: 180px;
+    height: 365px;
+    background: url('../images/iPhone.png') -28px -6px no-repeat;
+    position: absolute;
+    right: 22vw;
+    top: 192px;
+    z-index: 999;
 }
 .carousel{
     position: relative;
@@ -223,13 +250,14 @@
     right: 5%;
     top: 45%;
 }
-/* /Header */
 
 
-/*------------ Section Merits ------------*/
+/*===================================
+  SECTION MERITS
+===================================*/
 .merits{
     background-color: #232324;
-    width: 1700px;
+    width: 100%;
     height: 368px;
     margin: 0 auto 0;
     padding-top: 20px;
@@ -250,6 +278,10 @@
     text-align: center;
     display: block;
 }
+
+/*
+* MERITS ARTICLES
+*/
 .merits-artic{
     width: 233px;
     float: left;
@@ -282,8 +314,8 @@
 .infinite{
     position: absolute;
     top: 30px;
-    left: 5px;
-    width: 89px;
+    left: 7px;
+    width: 85px;
 }
 .infinite:before,
 .infinite:after{
@@ -291,9 +323,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 27px;
-    height: 27px;
-    border: 7px solid white;
+    width: 25px;
+    height: 25px;
+    border: 8px solid white;
     -moz-border-radius: 50px 50px 0 50px;
     border-radius: 50px 50px 0 50px;
     -webkit-transform: rotate(-45deg);
@@ -307,7 +339,7 @@
     right: 0;
     -moz-border-radius: 50px 50px 50px 0;
     border-radius: 50px 50px 50px 0;
-    border: 7px solid white;
+    border: 8px solid white;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -384,13 +416,14 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 }
-/* /Section Merits */
 
 
-/*------------ Section Team ------------*/
+/*===================================
+  SECTION TEAM
+===================================*/
 .team{
     background-color: #6cc372;
-    width: 1700px;
+    width: 100%;
     height: 496px;
     margin: 0 auto 0;
     padding-top: 20px;
@@ -412,6 +445,10 @@
     text-align: center;
     display: block;
 }
+
+/*
+* TEAM ARTICLES
+*/
 .team-artic{
     width: 220px;
     height: 340px;
@@ -453,6 +490,7 @@
     font-size: 25px;
     color: white;
     background-color: #6cc372;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.3);
     display: inline-block;
 }
 .tweet-follow:before{
@@ -464,16 +502,21 @@
     left: 17px;
     bottom: 25px;
 }
-/* /Section Team */
 
 
-/*------------ Section>Portfolio + Pricing ------------*/
+/*===================================
+  SECTION > PORTFOLIO + PRICING
+===================================*/
 .p-and-p{
-    width: 1700px;
+    width: 100%;
     height: 928px;
     margin: 0 auto;
     position: relative;
 }
+
+/*
+* PORTFOLIO SECTION
+*/
 .portfolio{
     padding-top: 20px;
     background-color: #f0f0f0;
@@ -482,7 +525,7 @@
 }
 .portfolio:after{
     content: '';
-    width: 1700px;
+    width: 100%;
     height: 1px;
     background-color: #d8d8d8;
     position: absolute;
@@ -505,7 +548,9 @@
     display: inherit;
 }
 
-/* Slider*/
+/*
+* PROTFOLIO SLIDER
+*/
 .sliderWrapper{
     width: 960px;
     padding: 40px 90px 10px;
@@ -626,13 +671,13 @@
     background: url("../images/safaryfront.jpg") -62px -28px;
 }
 
-/**/
 
+/*
+* PRICING SECTION
+*/
 .pricing{
-    width: 960px;
     position: absolute;
-    bottom: 25px;
-    left: 22%;
+    bottom: -324px;
 }
 .pricing-artic{
     width: 298px;
@@ -656,29 +701,6 @@
     border-radius:0 0 5px 5px;
     padding: 5px 20px;
 }
-/*-||- -Active*/
-.pricing-artic-active{
-    position: relative;
-    bottom: 36px;
-}
-.pricing-artic-active header h2{
-    color: #eb4f4e;
-}
-.pricing-artic-active header span{
-    padding-bottom: 10px;
-    color: #232324;
-}
-.pricing-artic-active header:after{
-    content: '';
-    width: 80px;
-    height: 35px;
-    background: url('../images/sprites.png') 5px -334px, linear-gradient(to bottom, #FFFFFF 50%, #F0F0F0 50%);
-    position: absolute;
-    left: 37%;
-    top: 107px;
-    z-index: 1;
-}
-/**/
 .pricing-title{
     font-family: 'bariol_regularregular';
     font-size: 40px;
@@ -694,6 +716,38 @@
     text-align: center;
     display: block;
 }
+.pricing-descr:hover{
+    text-decoration: underline;
+}
+/*
+* PRICING ARTICLE ACTIVE
+*/
+.pricing-artic-active{
+    position: relative;
+    bottom: 36px;
+}
+.pricing-artic-active header h2{
+    color: #eb4f4e;
+}
+.pricing-artic-active header a{
+    padding-bottom: 10px;
+    color: #232324;
+}
+.pricing-artic-active header a:hover{
+    text-decoration: none;
+    cursor: default;
+}
+.pricing-artic-active header:after{
+    content: '';
+    width: 80px;
+    height: 35px;
+    background: url('../images/sprites.png') 5px -334px, linear-gradient(to bottom, #FFFFFF 50%, #F0F0F0 50%);
+    position: absolute;
+    left: 37%;
+    top: 107px;
+    z-index: 1;
+}
+/**/
 .pricing-options{
     font-family: 'bariol_regularregular';
     font-size: 20px;
@@ -736,6 +790,9 @@
     float: right;
     overflow: hidden;
 }
+.order:hover{
+    color: #eb4f4e;
+}
 .price{
     font-family: 'myriadProBold';
     font-size: 53px;
@@ -759,6 +816,10 @@
     content: '/mo';
     font-size: 20px;
 }
+
+/*
+* SECTION P-and-P BOTTOM
+*/
 .bottom-descr{
     display: inline-block;
     font-family: 'bariol_regularregular';
@@ -777,12 +838,13 @@
     color: #eb4f4e;
     text-decoration: underline;
 }
-/* /Section>Portfolio + Pricing */
 
 
-/*------------ Section Tweets ------------*/
+/*===================================
+  SECTION TWEETS
+===================================*/
 .tweets{
-    width: 1700px;
+    width: 100%;
     height: 277px;
     margin: 25px auto 0;
     padding-top: 10px;
@@ -804,7 +866,10 @@
     text-align: center;
     display: inherit;
 }
-/*Tweet Slider*/
+
+/*
+* TWEET SLIDER
+*/
 .tweet-wrapper{
     width: 960px;
     padding: 0px 90px 10px;
@@ -899,23 +964,27 @@
 a.tweet-info:hover{
     text-decoration: underline;
 }
-/**/
-/* /Section Tweets */
 
 
-/*------------ Footer ------------*/
+/*===================================
+  FOOTER
+===================================*/
 #footer{
-    width: 1700px;
+    width: 100%;
     height: 297px;
     margin: 0 auto;
     position: relative;
 }
+
+/*
+* FOOTER INFO
+*/
 .info{
     width: 618px;
     height: 148px;
     position: absolute;
     bottom: 55px;
-    left: 36%;
+    left: 30vw;
     background-color: rgba(0,0,0,0.9);
     border-radius: 10px;
     z-index: 1;
@@ -955,8 +1024,14 @@ a.tweet-info:hover{
     margin: 10px;
     display: inherit;
 }
+.mail-info:hover{
+    text-decoration: underline;
+}
+/*
+* FOOTER COPYRIGHTS + SOCIAL LINKS
+*/
 .copy{
-    width: 1700px;
+    width: 100%;
     height: 50px;
     background-color: #232324;
 }
@@ -1001,14 +1076,19 @@ a.tweet-info:hover{
 .copy-info span{
     color: #eb4f4e;
 }
+
+/*
+* GOOGLE MAPS
+*/
 .maps{
-    width: 1700px;
+    width: 100%;
     height: 252px;
 }
-/* /Footer */
 
 
-/*CLear fix class*/
+/*===================================
+  CLEAR FIX CLASSES
+===================================*/
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -1026,5 +1106,14 @@ a.tweet-info:hover{
 .cf {
     *zoom: 1;
 }
-/* /CLear fix class */
 
+
+/*===================================
+  MEDIA-QUERIES
+===================================*/
+
+@media screen and (min-width: 767px) and (max-width: 1060px) {
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}

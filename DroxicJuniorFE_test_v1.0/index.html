@@ -3,12 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Droxic Task</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
 
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
+
 <body>
     <header id="header" class="">
         <div class="header-top">
@@ -24,8 +30,8 @@
                     </ul>
                 </div><!-- /menu -->
                 <div class="logo">
-                    <a href="#" class="logo-title">Motion</a><!-- logo-title -->
-                    <span class="logo-descr">Asingle Page Template</span><!-- logo-descr -->
+                    <a href="#" class="logo-title">Motion</a>
+                    <span class="logo-descr">Asingle Page Template</span>
                 </div><!-- /logo -->
             </div><!-- container -->
         </div><!-- header-top -->
@@ -33,9 +39,10 @@
         <div class="carousel">
             <div class="container">
                 <header>
-                    <h1 class="carousel-title">Welcome to Motion</h1><!-- carousel-title -->
-                    <span class="carousel-descr">Asmart & Creative Single Page Template</span><!-- carousel-descr -->
+                    <h1 class="carousel-title">Welcome to Motion</h1>
+                    <span class="carousel-descr">Asmart & Creative Single Page Template</span>
                 </header>
+                <div class="iphone"></div>
                 <div id="carousel">
                     <img src="images/safaryfront.jpg" alt="" class="slide" />
                     <img src="images/safaryback1.jpg" alt="" class="slide" />
@@ -119,6 +126,62 @@
                     <h2 class="portfolio-title">Elegant & Genuine</h2>
                     <span class="portfolio-descr">This is how our works looks like :)</span>
                 </header>
+                <div class="pricing">
+                    <article class="pricing-artic">
+                        <header>
+                            <h2 class="pricing-title">Start Up</h2>
+                            <a href="#" class="pricing-descr">For beginners</a>
+                        </header>
+                        <ul>
+                            <li class="pricing-options">Basic pages</li>
+                            <li class="pricing-options">MySQL Databases</li>
+                            <li class="pricing-options">Bandwith</li>
+                            <li class="pricing-options">Storage space</li>
+                        </ul>
+                        <footer>
+                            <a href="#" class="order">Order</a>
+                            <!-- before: $ -->
+                            <span class="price">15</span>
+                            <!-- after: /mo -->
+                        </footer>
+                    </article>
+                    <article class="pricing-artic pricing-artic-active">
+                        <header>
+                            <h2 class="pricing-title">Standard</h2>
+                            <a href="#" class="pricing-descr">More than what you have dreamed with</a>
+                        </header>
+                        <ul>
+                            <li class="pricing-options">Standard pages</li>
+                            <li class="pricing-options">MySQL Databases</li>
+                            <li class="pricing-options">Bandwith</li>
+                            <li class="pricing-options">Storage space</li>
+                        </ul>
+                        <footer>
+                            <a href="#" class="order">Order</a>
+                            <!-- before: $ -->
+                            <span class="price">25</span>
+                            <!-- after: /mo -->
+                        </footer>
+                    </article>
+                    <article class="pricing-artic">
+                        <header>
+                            <h2 class="pricing-title">Professional</h2>
+                            <a href="#" class="pricing-descr">For smart people</a>
+                        </header>
+                        <ul>
+                            <li class="pricing-options">Basic pages</li>
+                            <li class="pricing-options">MySQL Databases</li>
+                            <li class="pricing-options">Bandwith</li>
+                            <li class="pricing-options">Storage space</li>
+                        </ul>
+                        <footer>
+                            <a href="#" class="order">Order</a>
+                            <!-- before: $ -->
+                            <span class="price">35</span>
+                            <!-- after: /mo -->
+                        </footer>
+                    </article>
+                </div><!-- /pricing -->
             </div><!-- /container -->
             <div id="pushHorizontalSlider" class="sliderWrapper">
                 <div class="ph-slider">
@@ -182,62 +245,7 @@
             </div><!-- /sliderWrapper -->
         </div><!-- /portfolio -->
 
-        <div class="pricing">
-            <article class="pricing-artic">
-                <header>
-                    <h2 class="pricing-title">Start Up</h2>
-                    <span class="pricing-descr">For beginners</span>
-                </header>
-                <ul>
-                    <li class="pricing-options">Basic pages</li>
-                    <li class="pricing-options">MySQL Databases</li>
-                    <li class="pricing-options">Bandwith</li>
-                    <li class="pricing-options">Storage space</li>
-                </ul>
-                <footer>
-                    <a href="#" class="order">Order</a>
-                    <!-- before: $ -->
-                    <span class="price">15</span>
-                    <!-- after: /mo -->
-                </footer>
-            </article>
-            <article class="pricing-artic pricing-artic-active">
-                <header>
-                    <h2 class="pricing-title">Standard</h2>
-                    <span class="pricing-descr">More than what you have dreamed with</span>
-                </header>
-                <ul>
-                    <li class="pricing-options">Standard pages</li>
-                    <li class="pricing-options">MySQL Databases</li>
-                    <li class="pricing-options">Bandwith</li>
-                    <li class="pricing-options">Storage space</li>
-                </ul>
-                <footer>
-                    <a href="#" class="order">Order</a>
-                    <!-- before: $ -->
-                    <span class="price">25</span>
-                    <!-- after: /mo -->
-                </footer>
-            </article>
-            <article class="pricing-artic">
-                <header>
-                    <h2 class="pricing-title">Professional</h2>
-                    <span class="pricing-descr">For smart people</span>
-                </header>
-                <ul>
-                    <li class="pricing-options">Basic pages</li>
-                    <li class="pricing-options">MySQL Databases</li>
-                    <li class="pricing-options">Bandwith</li>
-                    <li class="pricing-options">Storage space</li>
-                </ul>
-                <footer>
-                    <a href="#" class="order">Order</a>
-                    <!-- before: $ -->
-                    <span class="price">35</span>
-                    <!-- after: /mo -->
-                </footer>
-            </article>
-        </div><!-- /pricing -->
+
         <span class="bottom-descr">And more available plans for all needs ....
             <a href="#" class="check">Check here</a>
         </span><!-- bottom-descr -->
@@ -310,6 +318,7 @@
         </div>
         <div id="googleMap" class="maps"></div>
     </footer><!-- /footer -->
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.roundabout.js"></script>
     <script src="js/slider.js" type="text/javascript" charset="utf-8"></script>

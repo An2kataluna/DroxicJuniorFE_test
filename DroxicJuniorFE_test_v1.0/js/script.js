@@ -3,16 +3,12 @@
 */
 function initialize() {
   var mapCanvas = document.getElementById('googleMap');
-  var mapOptions = {
-    center: new google.maps.LatLng(44.5403, -78.5463),
-    zoom: 8,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
+  var mapOptions = {zoom:10,center:new google.maps.LatLng(42.2460700,24.650333200000024),
+mapTypeId: google.maps.MapTypeId.ROADMAP};
   var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 /* /Google Maps */
-
 
 /*
 * Jquery Carousel
@@ -28,13 +24,11 @@ $(document).ready(function() {
 
     });
 });
-
 /* /Jquery Carousel */
 
 /*
 * Vanilla Javascript Slider
 */
-
 var pushHorizontalSlider = new slider('#pushHorizontalSlider',{
     transition: {effect: 'pushInHorizontal'},
     classes: {slider: 'ph-slider',slide: 'ph-slide'}
@@ -50,9 +44,8 @@ var verticalSlider = new slider('#verticalSlider',{
       slider: 'tweet-slider',
       slide: 'tweet-slide',
     },
-    transition: {effect: 'pushInBottom'},
+    transition: {effect: 'pushInVertical'},
     autoRun: false,
     navigation: false
 });
-
 /* /Vanilla Javascript Slider */
