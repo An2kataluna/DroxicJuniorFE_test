@@ -35,17 +35,6 @@
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'bariolregular';
-    src: url('../fonts/BariolRegular/bariol-webfont.eot');
-    src: url('../fonts/BariolRegular/bariol-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BariolRegular/bariol-webfont.woff2') format('woff2'),
-         url('../fonts/BariolRegular/bariol-webfont.woff') format('woff'),
-         url('../fonts/BariolRegular/bariol-webfont.ttf') format('truetype'),
-         url('../fonts/BariolRegular/bariol-webfont.svg#bariolregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 /* /Fonts */
 
 .container{
@@ -176,8 +165,7 @@
     color: white;
     text-shadow: 0px 1px 1px #C34B2A;
     text-align: center;
-    display: block;
-    margin-bottom: 55px;
+    display: inherit;
 }
 .roundabout-holder {
     padding: 0;
@@ -189,9 +177,17 @@
     height: 431px;
     width: 619px;
     cursor: pointer;
-    display:block;
+    display: block;
     border-radius: 5px;
-    box-shadow:0px 5px 10px #000000;
+    box-shadow: 0px 5px 10px #000000;
+    position: absolute;
+    left: 166px;
+    top: 20px;
+    width: 619px;
+    height: 431px;
+    opacity: 1;
+    z-index: 280;
+    font-size: 16px;
 }
 .roundabout-moveable-item img {
     height: 100%;
@@ -211,6 +207,9 @@
     position: absolute;
     left: 5%;
     top: 45%;
+}
+#carousel-controls span:hover{
+    cursor: pointer;
 }
 #carousel-controls span.right {
     display: inline-block;
