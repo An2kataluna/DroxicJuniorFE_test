@@ -634,7 +634,7 @@
 }
 .ph-slide-artic{
     width: 215px;
-    height: 270px;
+    /*height: 270px;*/
     float: left;
     overflow: hidden;
     margin: 12px;
@@ -829,7 +829,7 @@
     text-align: center;
     position: absolute;
     bottom: 0;
-    left: 38%;
+    left: 34%;
 }
 .check{
     color: #eb4f4e;
@@ -943,10 +943,10 @@
     background: url('../images/sprites.png') -152px -330px;
     position: absolute;
     left: 50%;
-    top: 20px;
+    top: 0px;
 }
 .tweet{
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 10px;
     font-family: 'bariol_regularregular';
     font-size: 20px;
@@ -980,7 +980,7 @@ a.tweet-info:hover{
 * FOOTER INFO
 */
 .info{
-    width: 618px;
+    width: 430px;
     height: 148px;
     position: absolute;
     bottom: 55px;
@@ -1112,8 +1112,115 @@ a.tweet-info:hover{
   MEDIA-QUERIES
 ===================================*/
 
-@media screen and (min-width: 767px) and (max-width: 1060px) {
+@media screen and (max-width: 1060px) { /*and (min-width: 768px)*/
+    .menu{
+        float: left;
+        padding-left: 80px;
+    }
+    .roundabout-moveable-item{
+        top: 160px;
+        width: 437px;
+        height: 249px;
+        left: 564px;
+    }
+    .iphone{
+        display:none;
+        right: 0vw;
+        top: 33vw;
+        background-size: 77%;
+    }
+    #carousel-controls span.right{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    #carousel-controls span.left{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .merits{
+        height: auto;
+    }
+    .merits-artic{
+        float: none;
+        margin: 40px auto 0;
+    }
+    .team{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .team-artic{
+        float: none;
+        margin: 30px auto 30px;
+    }
+    .pricing{
+        position: relative;
+        /*top: 381px;*/
+        /*bottom: auto;*/
+    }
+    .pricing-artic{
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .sliderWrapper{
+        position: absolute;
+        top: 63px;
+        padding: 40px 0 0;
+    }
+    .ph-slider{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .ph-slide-artic{
+        width: 170px;
+    }
+    .ph-slide-artic:first-child {
+        margin-left: 24px;
+    }
+    .ph-slide-pic{
+        width: 150px;
+        height: 100px;
+    }
+    .slider-navigation{
+        left: 45%;
+        bottom: 0;
+    }
+    .slider-directions-prev{
+        left: 0;
+        top: auto;
+        bottom: -40px;
+    }
+    .slider-directions-next{
+        right: 60px;
+        top: auto;
+        bottom: -40px;
+    }
+    .portfolio{
+        height: 403px;
+    }
+    .p-and-p{
+        height: 1696px;
+    }
+    .tweet-wrapper{
+        width: auto;
+    }
+    .links{
+        float: left;
+        margin-left: 360px;
+    }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {/*and (min-width: 480px) */
+    .container{
+        width: auto;
+        margin: auto;
+    }
+    .links{
+        margin-left: 2px;
+    }
+    .bottom-descr{
+        left: 0;
+        bottom: -30px;
+    }
 }

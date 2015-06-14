@@ -3,7 +3,7 @@
 */
 function initialize() {
   var mapCanvas = document.getElementById('googleMap');
-  var mapOptions = {zoom:10,center:new google.maps.LatLng(42.2460700,24.650333200000024),
+  var mapOptions = {zoom:10,center:new google.maps.LatLng(42.24,24.481),
 mapTypeId: google.maps.MapTypeId.ROADMAP};
   var map = new google.maps.Map(mapCanvas, mapOptions);
 }
