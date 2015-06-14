@@ -170,7 +170,7 @@
     height: 365px;
     background: url('../images/iPhone.png') -28px -6px no-repeat;
     position: absolute;
-    right: 22vw;
+    right: 26vw;
     top: 192px;
     z-index: 999;
 }
@@ -232,7 +232,7 @@
     height: 40px;
     transform: rotate(-45deg);
     position: absolute;
-    left: 5%;
+    left: 0%;
     top: 45%;
 }
 #carousel-controls span:hover{
@@ -247,7 +247,7 @@
     height: 40px;
     transform: rotate(-45deg);
     position: absolute;
-    right: 5%;
+    right: 0%;
     top: 45%;
 }
 
@@ -1183,21 +1183,29 @@ a.tweet-info:hover{
         height: 100px;
     }
     .slider-navigation{
-        left: 45%;
+        left: 20%;
         bottom: 0;
     }
     .slider-directions-prev{
+        display: none;
         left: 0;
         top: auto;
         bottom: -40px;
     }
     .slider-directions-next{
-        right: 60px;
+        display: none;
+        right: 0;
         top: auto;
         bottom: -40px;
     }
+    .slider-navigation-item{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .portfolio{
-        height: 403px;
+        height: 401px;
     }
     .p-and-p{
         height: 1696px;
@@ -1209,6 +1217,13 @@ a.tweet-info:hover{
         float: left;
         margin-left: 360px;
     }
+    .tweet{
+        font-size: initial;
+    }
+    .bottom-descr{
+        left: 20%;
+        bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {/*and (min-width: 480px) */
@@ -1216,11 +1231,32 @@ a.tweet-info:hover{
         width: auto;
         margin: auto;
     }
+    #header{
+        height: auto;
+    }
+    .header-top {
+        height: 380px;
+    }
+    .menu {
+        float: left;
+        padding-left: 60px;
+        width: 110px;
+        height: 220px;
+    }
+    .roundabout-moveable-item{
+        width: 336px;
+        height: 214px;
+    }
+    .slider-navigation {
+        left: 0;
+        bottom: 0;
+    }
     .links{
         margin-left: 2px;
     }
     .bottom-descr{
-        left: 0;
-        bottom: -30px;
+        left: 20%;
+        bottom: 0px;
     }
+
 }
