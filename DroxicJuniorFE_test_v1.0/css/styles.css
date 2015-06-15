@@ -53,7 +53,7 @@
 ===================================*/
 #header{
     width: 100%;
-    height: 745px;
+    height: auto;
     background-color: #eb4f4e;
     margin: 0 auto;
     /*position: relative;*/
@@ -108,6 +108,33 @@
     float: right;
     overflow: hidden;
 }
+
+.box-shadow-menu {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 130px;
+}
+.box-shadow-menu:hover {
+    background-color:#eb4f4e;
+}
+.box-shadow-menu span{
+    font-family: 'bariol_regularregular';
+    font-size: 30px;
+    color: white;
+    padding-left: 50px;
+}
+.box-shadow-menu:before {
+    /*display: none;*/
+    top: 5px;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background: black;
+    box-shadow: 0 10px 0 0 black, 0px 21px 0px black;
+}
+
 .items{
     font-family: 'bariol_regularregular';
     font-weight: 900;
@@ -134,7 +161,7 @@
 .logo{
     width: 170px;
     height: 90px;
-    margin-top: 20px;
+    margin: 20px 0 0 20px;
     float: left;
     overflow: hidden;
     position: relative;
@@ -176,6 +203,7 @@
 }
 .carousel{
     position: relative;
+    clear: both;
 }
 .carousel-title{
     font-family: 'bariol_regularregular';
@@ -222,6 +250,9 @@
 }
 .roundabout-in-focus {
     cursor: auto;
+}
+#carousel-controls{
+    height: 112px;
 }
 #carousel-controls span.left{
     display: inline-block;
@@ -523,15 +554,7 @@
     height: 558px;
     position: relative;
 }
-.portfolio:after{
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #d8d8d8;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 .portfolio-title{
     font-family: 'bariol_regularregular';
     font-size: 40px;
@@ -547,6 +570,7 @@
     text-align: center;
     display: inherit;
 }
+
 
 /*
 * PROTFOLIO SLIDER
@@ -672,12 +696,24 @@
 }
 
 
+.portfolio:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /*
 * PRICING SECTION
 */
 .pricing{
-    position: absolute;
-    bottom: -324px;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    top: 67px;
 }
 .pricing-artic{
     width: 298px;
@@ -724,7 +760,7 @@
 */
 .pricing-artic-active{
     position: relative;
-    bottom: 36px;
+    bottom: 35px;
 }
 .pricing-artic-active header h2{
     color: #eb4f4e;
@@ -984,7 +1020,7 @@ a.tweet-info:hover{
     height: 148px;
     position: absolute;
     bottom: 55px;
-    left: 30vw;
+    left: 25%;
     background-color: rgba(0,0,0,0.9);
     border-radius: 10px;
     z-index: 1;
@@ -1113,9 +1149,12 @@ a.tweet-info:hover{
 ===================================*/
 
 @media screen and (max-width: 1060px) { /*and (min-width: 768px)*/
+    .container{
+        width: auto;
+    }
     .menu{
         float: left;
-        padding-left: 80px;
+        padding-left: 10px;
     }
     .roundabout-moveable-item{
         top: 160px;
@@ -1123,21 +1162,22 @@ a.tweet-info:hover{
         height: 249px;
         left: 564px;
     }
+    .roundabout-holder{
+        width: 600px;
+    }
     .iphone{
         display:none;
-        right: 0vw;
-        top: 33vw;
-        background-size: 77%;
+    }
+    #carousel-controls{
+        position: relative;
     }
     #carousel-controls span.right{
-        position: fixed;
         right: 0;
-        bottom: 0;
+        top: -50px;
     }
     #carousel-controls span.left{
-        position: fixed;
         left: 0;
-        bottom: 0;
+        top: -50px;
     }
     .merits{
         height: auto;
@@ -1155,8 +1195,9 @@ a.tweet-info:hover{
         margin: 30px auto 30px;
     }
     .pricing{
+        width: auto;
         position: relative;
-        /*top: 381px;*/
+        top: 500px;
         /*bottom: auto;*/
     }
     .pricing-artic{
@@ -1165,7 +1206,7 @@ a.tweet-info:hover{
     }
     .sliderWrapper{
         position: absolute;
-        top: 63px;
+        top: 100px;
         padding: 40px 0 0;
     }
     .ph-slider{
@@ -1183,7 +1224,7 @@ a.tweet-info:hover{
         height: 100px;
     }
     .slider-navigation{
-        left: 20%;
+        left: 40%;
         bottom: 0;
     }
     .slider-directions-prev{
@@ -1208,14 +1249,10 @@ a.tweet-info:hover{
         height: 401px;
     }
     .p-and-p{
-        height: 1696px;
+        height: 1900px;
     }
     .tweet-wrapper{
         width: auto;
-    }
-    .links{
-        float: left;
-        margin-left: 360px;
     }
     .tweet{
         font-size: initial;
@@ -1226,37 +1263,74 @@ a.tweet-info:hover{
     }
 }
 
+
 @media screen and (max-width: 767px) {/*and (min-width: 480px) */
     .container{
-        width: auto;
         margin: auto;
     }
     #header{
         height: auto;
     }
     .header-top {
-        height: 380px;
+        height: 165px;
     }
-    .menu {
-        float: left;
-        padding-left: 60px;
-        width: 110px;
-        height: 220px;
+    .menu{
+        padding: 0;
+        width: 100%;
+        clear: both;
+    }
+    .menu ul{
+        display: none;
+        background-color: #eb4f4e;
+        border-bottom: 20px solid #f56262;
+    }
+    .box-shadow-menu{
+        display: block;
+        padding-left: 20px;
+    }
+    .items{
+        float: none;
+    }
+    .portfolio {
+        height: 560px;
+    }
+    .roundabout-in-focus{
+        left: 5px !important;
     }
     .roundabout-moveable-item{
         width: 336px;
         height: 214px;
     }
+    .sliderWrapper{
+        height: 75%;
+    }
     .slider-navigation {
         left: 0;
         bottom: 0;
     }
-    .links{
-        margin-left: 2px;
+    .ph-slider {
+        margin: 0;
+        width: 50%;
     }
     .bottom-descr{
         left: 20%;
-        bottom: 0px;
+        bottom: -15px;
+    }
+    .tweet-wrapper{
+        padding: 0;
+    }
+    .links{
+        margin-left: 2px;
+        float: none;
+    }
+    .copy{
+        height: 75px;
+    }
+    .copy-info{
+        float: none;
+    }
+    .info {
+      width: 70%;
     }
 
 }

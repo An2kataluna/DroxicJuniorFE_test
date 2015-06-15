@@ -49,3 +49,22 @@ var verticalSlider = new slider('#verticalSlider',{
     navigation: false
 });
 /* /Vanilla Javascript Slider */
+
+
+/*
+* Responsive Menu
+*/
+$(function() {
+    var pull        = $('#pull');
+        menu        = $('.menu ul');
+        menuHeight  = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        $('.menu ul li').removeClass('active-item');
+        menu.slideToggle();
+        $('.menu').css('height', '20%');
+    });
+});
+/* /Responsive Menu */
+
